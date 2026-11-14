@@ -1,5 +1,5 @@
 import java.util.*;
-public class LibraryLateFineCounter {
+class LibraryLateFineCounter {
  static abstract class Item{String title;int days;Item(String t,int d){title=t;days=d;}abstract double fine();}
  static class Book extends Item{Book(String t,int d){super(t,d);}double fine(){return days*2.0;}}
  static class DVD extends Item{DVD(String t,int d){super(t,d);}double fine(){return Math.min(days*5.0,50);}}
