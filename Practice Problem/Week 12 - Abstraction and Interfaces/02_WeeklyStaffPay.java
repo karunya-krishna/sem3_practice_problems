@@ -1,5 +1,5 @@
 import java.util.*;
-public class WeeklyStaffPay {
+class WeeklyStaffPay {
  static abstract class Staff{String name;Staff(String n){name=n;}abstract double pay();}
  static class FullTime extends Staff{double salary;FullTime(String n,double s){super(n);salary=s;}double pay(){return salary;}}
  static class Hourly extends Staff{double hours,rate;Hourly(String n,double h,double r){super(n);hours=h;rate=r;}double pay(){return Math.min(40,hours)*rate+Math.max(0,hours-40)*rate*1.5;}}
