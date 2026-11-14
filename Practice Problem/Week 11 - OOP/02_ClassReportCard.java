@@ -1,0 +1,5 @@
+import java.util.*;
+public class ClassReportCard {
+ static class Student{private String name;private int a,b,c;Student(String n){name=n;}boolean setMarks(int x,int y,int z){if(x<0||x>100||y<0||y>100||z<0||z>100)return false;a=x;b=y;c=z;return true;}int total(){return a+b+c;}double avg(){return total()/3.0;}char grade(){double v=avg();return v>=80?'A':v>=70?'B':v>=60?'C':v>=40?'D':'F';}public String toString(){return String.format("%s total=%d avg=%.2f grade=%c",name,total(),avg(),grade());}}
+ public static void main(String[] x){Scanner s=new Scanner(System.in);int n=s.nextInt();ArrayList<Student>a=new ArrayList<>();for(int i=0;i<n;i++){Student p=new Student(s.next());int m=s.nextInt(),b=s.nextInt(),c=s.nextInt();if(p.setMarks(m,b,c))a.add(p);else System.out.println(p.name+" skipped: marks must be 0 to 100");}int passes=0;for(int end=a.size()-1;end>0;end--){boolean swap=false;for(int i=0;i<end;i++)if(a.get(i).total()<a.get(i+1).total()){Collections.swap(a,i,i+1);swap=true;}passes++;if(!swap)break;}for(int i=0;i<a.size();i++)System.out.println((i+1)+". "+a.get(i));System.out.println("Sorted in "+passes+" passes");}
+}
