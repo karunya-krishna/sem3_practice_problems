@@ -1,5 +1,5 @@
 import java.util.*;
-public class CampusStaffSalary {
+class CampusStaffSalary {
  static class Staff{String name;double base;Staff(String n,double b){name=n;base=b;}double getBonus(){return 0;}String type(){return "Staff";}double total(){return base+getBonus();}}
  static class Teacher extends Staff{Teacher(String n,double b){super(n,b);}double getBonus(){return 5000;}String type(){return "Teacher";}}
  static class LabAssistant extends Staff{LabAssistant(String n,double b){super(n,b);}double getBonus(){return 2000;}String type(){return "LabAssistant";}}
