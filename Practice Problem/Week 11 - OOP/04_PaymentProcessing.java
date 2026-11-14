@@ -1,5 +1,5 @@
 import java.util.*;
-public class PaymentProcessing {
+class PaymentProcessing {
  interface PaymentMode{double processPayment(double amount);String name();}
  static class CashPayment implements PaymentMode{public double processPayment(double a){return a;}public String name(){return "Cash";}}
  static class CardPayment implements PaymentMode{public double processPayment(double a){return a*1.02;}public String name(){return "Card";}}
