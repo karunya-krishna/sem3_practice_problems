@@ -1,4 +1,4 @@
-public class PiggyBank {
+class PiggyBank {
  private double savings;
  private final String id;
  public PiggyBank(String id){this.id=id;savings=0;}
