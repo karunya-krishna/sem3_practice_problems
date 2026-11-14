@@ -1,4 +1,4 @@
-public class QuizScorecard {
+class QuizScorecard {
  private final boolean[] results;
  private int recorded;
  public QuizScorecard(int questionCount){results=new boolean[questionCount];recorded=0;}
