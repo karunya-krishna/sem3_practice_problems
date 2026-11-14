@@ -1,5 +1,5 @@
 import java.util.*;
-public class ElectricityConnectionBilling {
+class ElectricityConnectionBilling {
  static abstract class Connection{int units;Connection(int u){units=u;}abstract double bill();}
  static class Home extends Connection{Home(int u){super(u);}double bill(){return Math.min(units,100)*5.0+Math.max(0,units-100)*7.0;}}
  static class Shop extends Connection{Shop(int u){super(u);}double bill(){return units*8.0+100;}}
