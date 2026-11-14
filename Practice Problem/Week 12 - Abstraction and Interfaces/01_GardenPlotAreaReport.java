@@ -1,5 +1,5 @@
 import java.util.*;
-public class GardenPlotAreaReport {
+class GardenPlotAreaReport {
  interface Plot{String owner();String shape();double area();}
  static class Circle implements Plot{String o;double r;Circle(String o,double r){this.o=o;this.r=r;}public String owner(){return o;}public String shape(){return "CIRCLE";}public double area(){return Math.PI*r*r;}}
  static class Rectangle implements Plot{String o;double l,w;Rectangle(String o,double l,double w){this.o=o;this.l=l;this.w=w;}public String owner(){return o;}public String shape(){return "RECTANGLE";}public double area(){return l*w;}}
