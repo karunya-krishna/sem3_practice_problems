@@ -1,5 +1,5 @@
 import java.util.*;
-public class ExaminationQuestionGrader {
+class ExaminationQuestionGrader {
  interface Question {double grade(String correct,String answer,double points);}
  static class ExactQuestion implements Question {public double grade(String c,String a,double p){return c.equals(a)?p:0;}}
  static class EssayQuestion implements Question {
