@@ -1,5 +1,5 @@
 import java.util.*;
-public class PaymentSystemFees {
+class PaymentSystemFees {
  interface Payment {double finalAmount(double amount);}
  static class Card implements Payment {public double finalAmount(double a){return a*1.02;}}
  static class Wallet implements Payment {public double finalAmount(double a){return a*1.01;}}
