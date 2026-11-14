@@ -1,5 +1,5 @@
 import java.util.*;
-public class PublicTransportFare {
+class PublicTransportFare {
  interface Transport {double fare(double distance,double factor);}
  static class Bus implements Transport {public double fare(double d,double f){return Math.min(2+.10*d,10);}}
  static class Train implements Transport {public double fare(double d,double f){return 3+.15*d;}}
