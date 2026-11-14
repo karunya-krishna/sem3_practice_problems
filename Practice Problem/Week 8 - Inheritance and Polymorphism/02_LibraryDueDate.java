@@ -1,5 +1,5 @@
 import java.util.*;import java.time.*;
-public class LibraryDueDate {
+class LibraryDueDate {
  static abstract class LibraryItem {
   String title;LibraryItem(String t){title=t;}
   abstract int loanDays();
