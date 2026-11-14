@@ -1,4 +1,4 @@
-public class AttendanceSheet {
+class AttendanceSheet {
  private final String[] names;
  private int count;
  public AttendanceSheet(int capacity){names=new String[capacity];count=0;}
