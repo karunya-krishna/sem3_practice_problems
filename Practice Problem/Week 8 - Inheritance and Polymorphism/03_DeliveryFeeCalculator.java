@@ -1,5 +1,5 @@
 import java.util.*;
-public class DeliveryFeeCalculator {
+class DeliveryFeeCalculator {
  interface Delivery {double fee(double weight,double distance,double customs);}
  static class Standard implements Delivery {public double fee(double w,double d,double c){return 5+.5*w+.1*d;}}
  static class Express implements Delivery {public double fee(double w,double d,double c){return 15+w+.2*d;}}
