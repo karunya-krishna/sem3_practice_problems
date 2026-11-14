@@ -1,4 +1,4 @@
-public class LockerCode {
+class LockerCode {
  private String code;
  private final int lockerNumber;
  public LockerCode(int number,String initialCode){lockerNumber=number;code=initialCode;}
